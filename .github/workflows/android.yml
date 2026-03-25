@@ -2,7 +2,7 @@ name: Build APK
 
 on:
   push:
-    branches: [ "principal", "main" ]
+    branches: [ "main", "principal" ]
 
 jobs:
   build:
@@ -19,7 +19,7 @@ jobs:
           java-version: '17'
 
       - name: Unzip app
-        run: unzip -o aplicación.zip
+        run: unzip -o app.zip
 
       - name: Build APK
         run: gradle assembleDebug
