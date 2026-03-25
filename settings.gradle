@@ -1,0 +1,2 @@
+rootProject.name='HJEnvios'
+include ':app'
